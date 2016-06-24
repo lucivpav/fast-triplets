@@ -1,0 +1,11 @@
+
+tar_root_dir: '/home/bohan/Documents/code/cvpr2016/data/cifar_10/preprocessed_data/'  # dir to store all the preprocessed files
+
+# caffe style train and validation labels
+traintxt_filename: '/home/bohan/Documents/code/cvpr2016/data/cifar_10/preprocessed_data/train.txt'
+valtxt_filename: '/home/bohan/Documents/code/cvpr2016/data/cifar_10/preprocessed_data/val.txt'
+
+# original training and testing images
+train_img_dir: '/home/bohan/Documents/code/cvpr2016/data/cifar_10/train/'
+val_img_dir:  '/home/bohan/Documents/code/cvpr2016/data/cifar_10/test/'
+

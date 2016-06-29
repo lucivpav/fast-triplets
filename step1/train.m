@@ -9,10 +9,7 @@ bits_per_group = 8;
 bits_num = 64;
 total_group = bits_num / bits_per_group;
 
-
-
-
-for group_idx = 1:total_group
+ group_idx = 1:total_group
     
   update_bit = (group_idx-1) * bits_per_group;
   sign = true;

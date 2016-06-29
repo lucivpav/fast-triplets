@@ -341,6 +341,8 @@ class SoftmaxLayer(object):
 
 class MultilabelLayer(object): 
 
+# cross-entropy loss in our paper
+
     def __init__(self, actual_probability,  groundtruth_label, bias):
 
 

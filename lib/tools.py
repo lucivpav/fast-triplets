@@ -1,9 +1,6 @@
 import os
-
 import numpy as np
-
 import math
-
 
 def save_weights(layers, weights_dir, epoch):
     for idx in range(len(layers)):

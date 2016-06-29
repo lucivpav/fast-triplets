@@ -229,7 +229,7 @@ class CNN_model(object):
 
 
 
-def compile_models(model, config):  #introduce the AlexNet to define the gradients and updates, then construct theano functions
+def compile_models(model, config):  #introduce the Vggnet to define the gradients and updates, then construct theano functions
 
 
     model_input = model.x
@@ -264,9 +264,6 @@ def compile_models(model, config):  #introduce the AlexNet to define the gradien
     vels = [theano.shared(param_i.get_value() * 0.)
             for param_i in params]
 
-#    vels = [theano.shared((param_i.get_value() * 0.), broadcastable=grads.broadcastable)  #the vector in python is different from the (m*1) array
-#            for param_i in params]
-
 
     # construct the updates list by looping over all the parameters
     if config['use_momentum']:
@@ -282,7 +279,7 @@ def compile_models(model, config):  #introduce the AlexNet to define the gradien
             elif weight_type == 'b':
                 real_grad = grad_i
                 real_lr = lr
-            elif weight_type == 'W_ful':           # default finetune the network
+            elif weight_type == 'W_ful':        
                 real_grad = grad_i + eta * param_i
                 real_lr = 10. * lr
             elif weight_type == 'b_ful':

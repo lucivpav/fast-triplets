@@ -8,12 +8,16 @@ For commercial applications, please contact Chunhua Shen http://www.cs.adelaide.
 
 __This is the implementation of the following paper. If you use this code in your research, please cite our paper__
 
+```
+
 @inproceedings{zhuang2016fast,
   title={Fast Training of Triplet-based Deep Binary Embedding Networks},
   author={Zhuang, Bohan and Lin, Guosheng and Shen, Chunhua and Reid, Ian},
   journal={arXiv preprint arXiv:1603.02844},
   year={2016}
 }
+
+```
 
 ## Overview
 ./step1/ includes the code for the binary codes inference step. 

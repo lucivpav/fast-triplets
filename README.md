@@ -27,6 +27,8 @@ __This is the implementation of the following paper. If you use this code in you
 ## Training
 
 The code is based on Ubuntu 14.04.
-The main function is the ./step1/train.m file and modify the paths in that file. 
+The main function is the ./step1/train.m file.
+Modify the paths in the above main file and config.yaml.
+
 
 

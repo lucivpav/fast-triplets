@@ -43,7 +43,7 @@ Trained models will be stored in ./models/.
 
 ## Testing
 
-You should first extract the database codes as well as the test codes first by running ./code_extraction.py.
+You should first extract the database codes as well as the test codes by running ./code_extraction.py.
 Then run ./test.m to do testing. 
 
 

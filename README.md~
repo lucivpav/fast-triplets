@@ -9,20 +9,26 @@ For commercial applications, please contact Chunhua Shen http://www.cs.adelaide.
 __This is the implementation of the following paper. If you use this code in your research, please cite our paper__
 
 ```
-
-@inproceedings{zhuang2016fast,
-  title={Fast Training of Triplet-based Deep Binary Embedding Networks},
-  author={Zhuang, Bohan and Lin, Guosheng and Shen, Chunhua and Reid, Ian},
-  journal={arXiv preprint arXiv:1603.02844},
-  year={2016}
+@InProceedings{Zhuang_2016_CVPR,
+author = {Zhuang, Bohan and Lin, Guosheng and Shen, Chunhua and Reid, Ian},
+title = {Fast Training of Triplet-Based Deep Binary Embedding Networks},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2016}
 }
+
 
 ```
 
 ## Overview
-./step1/ includes the code for the binary codes inference step. 
+./step1/ includes the code for the binary codes inference step.
 ./lib/ includes the necessary codes for the network training. We inplement it using Theano. 
 ./preprocessing is the data preprocessing toolbox. 
+
+## Data Preprocessing
+The data preprocessing code is in ./preprocessing/. It will generate suitable data for training and testing.
+The processed data is in folder ./preprocessed_data/.
+
 
 ## Training
 
@@ -30,6 +36,10 @@ The code is based on Ubuntu 14.04.
 The main function is the ./step1/train.m file.
 Modify the paths in the above main file and config.yaml.
 
+## Testing
+
+You should first extract the database codes as well as the test codes first by running ./code_extraction.py.
+Then run ./test.m to do testing. 
 
 
 ## Copyright

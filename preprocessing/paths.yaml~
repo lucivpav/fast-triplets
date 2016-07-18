@@ -9,3 +9,8 @@ valtxt_filename: './preprocessed_data/val.txt'
 train_img_dir: './data/cifar_10/train/'
 val_img_dir:  './data/cifar_10/test/'
 
+
+# modify batch_size and img_size here
+
+batch_size: 50
+img_size: 227

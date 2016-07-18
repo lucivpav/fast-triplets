@@ -26,7 +26,11 @@ year = {2016}
 ./preprocessing is the data preprocessing toolbox. 
 
 ## Data Preprocessing
-The data preprocessing code is in ./preprocessing/. It will generate suitable data for training and testing.
+The data preprocessing code is in ./preprocessing/ and it will generate suitable data for training and testing. Please modify ./preprocessing/paths.yaml.
+
+run make_caffe_txt.py-->make_hkl.py-->make_labels.py 
+
+
 The processed data is in folder ./preprocessed_data/.
 
 
@@ -34,7 +38,7 @@ The processed data is in folder ./preprocessed_data/.
 
 The code is based on Ubuntu 14.04.
 The main function is the ./step1/train.m file.
-Modify the paths in the above main file and config.yaml.
+Please modify the configurations in the config.yaml.
 Trained models will be stored in ./models/. 
 
 ## Testing

@@ -57,7 +57,7 @@ def save_batches(file_list, tar_dir, img_size=227, batch_size=64,
 
             if num_sub_batch == 1:
                 save_name = '%04d' % (batch_count - 1) + '.hkl'
-                hkl.dump(img_batch, os.path.join(tar_dir, save_name), mode='w') #3*256*256*256
+                hkl.dump(img_batch, os.path.join(tar_dir, save_name), mode='w') 
 
     return img_sum / batch_count if flag_avg else None  # this simple presentation
 
